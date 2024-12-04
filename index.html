@@ -3,12 +3,70 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mi Página Web</title>
-  <!-- Vincula tu archivo CSS si tienes uno -->
-  <link rel="stylesheet" href="styles.css">
+  <title>Descarga Chamba Rápida</title>
+  <!-- Vincula tu archivo CSS si tienes uno, en este caso está embebido -->
+  <style>
+    /* Estilos globales */
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f7e7ce;
+      color: #333;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 36px;
+      color: #5a2d83;
+      margin-bottom: 20px;
+    }
+
+    .container {
+      background-color: #ffffff;
+      padding: 30px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+      width: 80%;
+      max-width: 400px;
+    }
+
+    a {
+      text-decoration: none;
+      font-size: 18px;
+      color: #fff;
+      background-color: #5a2d83;
+      padding: 15px 25px;
+      border-radius: 10px;
+      transition: background-color 0.3s ease;
+    }
+
+    a:hover {
+      background-color: #4a1f66;
+    }
+
+    .apk-image {
+      width: 100px;
+      margin-bottom: 20px;
+    }
+
+    p {
+      font-size: 16px;
+      color: #555;
+      margin-bottom: 20px;
+    }
+  </style>
 </head>
 <body>
- <h1>DESCARGA AQUI TU APP </h1>
-   <a href="app-debug.apk" download>haz click aqui para descargar la APK</a>
+  <div class="container">
+    <img src="https://via.placeholder.com/100" alt="Logo de Chamba Rápida" class="apk-image">
+    <h1>¡Descarga Chamba Rápida!</h1>
+    <p>Haz clic en el siguiente botón para descargar la APK y empezar a buscar trabajos fácilmente.</p>
+    <a href="app-debug.apk" download>Descargar APK</a>
+  </div>
 </body>
 </html>
